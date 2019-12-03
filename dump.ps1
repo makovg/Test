@@ -391,7 +391,7 @@ namespace PowerDump
         function Get-HBootKey
         {
             param([byte[]]$bootkey);
-            $aqwerty = [Text.Encoding]::ASCII.GetBytes("!@#$%^"&"*()qwertyUIOPAzxcvbnmQQQQQQQQQQQQ)(*@"&"%`0");
+            $aqwerty = [Text.Encoding]::ASCII.GetBytes("!@#$%^*()qwertyUIOPAzxcvbnmQQQQQQQQQQQQ)(*@%`0");
             $anum = [Text.Encoding]::ASCII.GetBytes("0123456789012345678901234567890123456789`0");
             $k = Get-Item HKLM:\SAM\SAM\Domains\Account;
             if (-not $k) {return $null}
